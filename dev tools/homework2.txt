@@ -1,0 +1,52 @@
+Hi Edgar.
+
+Task 1: </* You have a file with this content
+create a file and copy this content there */>
+   
+1. Open Vim with the files you want to edit:
+
+   Replace file1.txt, file2.txt, etc., with the names of the files you want to edit.
+
+2. Once Vim opens with the files, you can navigate to the one you want to copy from by switching buffers. For example, to switch to file1.txt, you can use the command :b file1.txt.
+
+3. Navigate to the beginning of the content you want to copy and enter visual mode by pressing v.
+
+4. Move the cursor to select the text you want to copy.
+
+5. Press y to yank (copy) the selected text.
+
+6. Navigate to the empty buffer or the new file where you want to paste the copied text. You can switch to the new buffer by using :bnext or :bprev to cycle through the open buffers until you reach the desired one.
+
+7. Once you're in the buffer where you want to paste the text, position the cursor where you want the text to be pasted.
+
+8. Press p to paste the copied text.
+
+9. Save the changes to the new file by typing :w new_file.txt and pressing Enter. Replace new_file.txt with the desired filename.
+
+10. If you still need to work with other files, you can switch back to them using the appropriate buffer navigation commands (:b file1.txt, :b file2.txt, etc.).
+
+11. Once you're done, save and exit Vim by typing :wq and pressing Enter.
+
+Task 2: </* Use recording mode and update file content like this */>
+
+  To accomplish this task in Vim using recording mode, you can follow these steps:
+
+1. Open the file in Vim:
+
+2. Enter recording mode by pressing q followed by a letter (e.g., qz). This will start recording your keystrokes into the register specified by the letter (z in this example).
+
+3. Navigate to the first occurrence of [ using f[, then delete it with x.
+
+4. Move to the end of the line using $, delete the date text [Apr 01], and move to the beginning of the line with 0.
+
+5. Insert [Apr 01] at the desired position using i for insert mode.
+
+6. Stop recording by pressing q.
+
+7. Execute the recorded macro by typing @z. This will repeat the recorded actions for the current line.
+
+8. Move to the next line using j and repeat steps 7 and 8 until you reach the end of the file.
+
+9. Once you've applied the macro to all lines, save the changes and exit Vim:
+
+Regards, Aren Qochinyan.
